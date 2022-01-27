@@ -127,6 +127,8 @@ function Home() {
 }
 
 function Hello() {
+  const nama  = ReactSession.get("username");
+  const url  = 'https://api.whatsapp.com/send?phone=&text=Hai,%20' + nama;
   const sequence = [
     {
       content: "Bahkan gula pun akan kalah manisnya ketika kamu tersenyum kepadaku.",
@@ -155,7 +157,7 @@ function Hello() {
       <Container className='container'>
         <TypingStep sequence={sequence} styleClass="typing"/>
       </Container>
-      <Button className='lanjutButton' variant="success" href='https://api.whatsapp.com/send?phone=&text=Hai,%20'><FaWhatsapp /> Lanjut </Button>
+      <Button className='lanjutButton' variant="success" href={url}><FaWhatsapp /> Lanjut </Button>
     </>
   )
 }
