@@ -21,6 +21,10 @@ function App() {
 }
 
 function Home() {
+  let audio = new Audio("/Dandelions.mp3");
+  const start = () => {
+    audio.play()
+  }
   let navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [show1, setShow1] = useState(true);
@@ -61,7 +65,7 @@ function Home() {
               <div class="form">
                 <h4 className='headerText'>Nama Kamu</h4>
                 <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
-                <button onClick={submit}>Lanjut</button>
+                <button onClick={() => { submit(); start() }}>Lanjut</button>
               </div>
             </div>
           </Modal.Body>
