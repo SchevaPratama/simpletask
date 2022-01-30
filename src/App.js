@@ -143,7 +143,7 @@ function Hello() {
       content: 200, // 200ms delay
     },
     {
-      content: "\nDari: arane januar., untuk: " + ReactSession.get("username"),
+      content: "\nDari: arane januar, untuk: " + ReactSession.get("username"),
       config: {
         styleClass: "typing",
       },
