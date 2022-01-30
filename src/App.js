@@ -131,7 +131,7 @@ function Hello() {
   const url  = 'https://api.whatsapp.com/send?phone=&text=Hai,%20' + nama;
   const sequence = [
     {
-      content: "Bahkan gula pun akan kalah manisnya ketika kamu tersenyum kepadaku.",
+      content: "Makasih yo kado ambi ultahe, hari iki kuwe wes ngekek i waktu gae aku pisan walaupun kuwe wedi di golek i wong tuwekmu, dan aku juga mau netu gae nunjukno kegiatanku ndek kerjoan iku lapo ae, dalam artian kuwe ga perlu mikir seng engga engga aku ndek Rogojampi, aku wes nduwe tanggung jawab nek aku ndek kene fokus kerjo, aku pisan wes janji ndek kuwe nek aku ndek kene ngga atene macem macem, aku kadang iso emosi dan aku pisan berusaha gae ngerubah sikapku walaupun iku susah, intine aku sayang kuwe dan aku pisan ngga atene macem macem selama kerjo. Semoga baik baik terus kedepane dan kuwe ojo curiga ndek aku nek aku bakalan main wedok ndek kene, love u nabila ♡",
       config: {
         styleClass: "typing",
       },
@@ -143,7 +143,7 @@ function Hello() {
       content: 200, // 200ms delay
     },
     {
-      content: "\nDari: Aku, untuk: " + ReactSession.get("username"),
+      content: "\nDari: arane januar., untuk: " + ReactSession.get("username"),
       config: {
         styleClass: "typing",
       },
