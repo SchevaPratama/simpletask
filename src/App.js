@@ -152,7 +152,7 @@ function Hello() {
 
   return (
     <>
-      <img src='/dino.jpg' className='dinoImage'></img>
+      <img src='/rev.jpg' className='dinoImage'></img>
       <h4 className='textHello'>Halo, {ReactSession.get("username")}!♥</h4>
       <Container className='container'>
         <TypingStep sequence={sequence} styleClass="typing"/>
